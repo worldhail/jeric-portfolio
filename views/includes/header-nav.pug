@@ -2,7 +2,7 @@ header
     .logo-container
         img.logo-image(src='/img/jeric-portfolio-logo.png' alt='logo name' width='250px' height="102px")
     .header-interaction
-        a.header-contact-link(href="#conctact-me") Contact
+        a.header-contact-link(href='contact') Contact
         .menu-button
             each div, index in ['', '', '']
                 .line
@@ -15,4 +15,4 @@ nav
             each line, value in ['home', 'project', 'about', 'skills', 'contact']
                 li.category-list(class=line + '-link')
                     -const upperCase = line.replace(line[0], line[0].toUpperCase())
-                    a(class=line href='')= upperCase
+                    a(class=line href=line)= upperCase
