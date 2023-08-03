@@ -1,0 +1,62 @@
+.main-contact-page {
+  padding: 10% 0;
+}
+
+.map-placeholder {
+  background: url("/img/map.jpg") no-repeat content-box bottom;
+  background-size: cover;
+  margin: 0 10%;
+  position: relative;
+}
+.map-placeholder h1 {
+  padding: 50px 0;
+  font-size: 64px;
+  color: white;
+  text-align: center;
+}
+
+.contact-information {
+  border: 1px solid #2983F8;
+  margin: -90px 5% 0;
+  border-radius: 20px;
+  padding: 150px 10% 10%;
+}
+.contact-information .name {
+  font-size: 1.1rem;
+}
+.contact-information i {
+  color: #424656;
+}
+.contact-information .call-me-btn {
+  background-color: green;
+  margin: 20px auto 10px;
+}
+.contact-information .call-me-btn:hover {
+  background-color: rgb(6, 167, 6);
+}
+.contact-information .email-btn:hover {
+  background-color: #3d7bcb;
+}
+.contact-information .email-address {
+  word-break: break-all;
+}
+
+.contact-information > * {
+  margin-bottom: 10px;
+}
+
+.btn-typ {
+  display: block;
+  width: 160px;
+  margin: 5px auto 0;
+  padding: 10px 0;
+  border: none;
+  background-color: rgba(38, 71, 114, 0.8784313725);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.btn-typ a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+}/*# sourceMappingURL=contact.css.map */
