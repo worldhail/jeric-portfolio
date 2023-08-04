@@ -1,0 +1,53 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        meta(name='keywords' content="portfolio, web developer, front-end, back-end, fullstack, self-taught")
+        meta(name='despcription' content='Jeric Chua\'s Portfolio Website. A self-taught web developer')
+        meta(name='author' content='Jeric Chua')
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        title Jeric Portfolio
+        link(rel='stylesheet' type='text/css' href='/css/layout.css')
+        link(rel="stylesheet" href="/fontawesome-free-6.1.2-web/css/all.min.css")
+        script(src='/js/main.js' defer)
+
+    body
+        header
+            .logo-container
+                img.logo-image(src='/img/jeric-portfolio-logo.png' alt='logo name' width='250px' height="102px")
+            .header-interaction
+                a.header-contact-link(href='contact') Contact
+                .menu-button
+                    each div, index in ['', '', '']
+                        .line
+        nav
+            .hidden-overlay
+                p.one-time-reminder You may tap here to close the navigation
+            .ul-wrapper
+                i.fa-solid.fa-arrow-right.nav-close
+                ul.categories
+                    each line, value in ['home', 'project', 'about', 'skills', 'contact']
+                        li.category-list(class=line + '-link')
+                            -const upperCase = line.replace(line[0], line[0].toUpperCase())
+                            a(class=line href=line)= upperCase
+
+        main
+            block page-content
+        
+        footer
+            .footer-icons
+                i.fa-brands.fa-github
+                i.fa-brands.fa-codepen
+                i.fa-brands.fa-facebook
+                i.fa-brands.fa-linkedin
+            .footer-line
+            ul.nav-categories
+                li Home
+                li Projects
+                li About
+                li Contact
+            .footer-line
+            p.copyright © 2023 Jeric Chua
+                br
+                | Made with passion
