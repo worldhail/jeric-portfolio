@@ -183,6 +183,10 @@ footer {
 .nav-categories li {
   margin: 15px 10px;
 }
+.nav-categories li a {
+  text-decoration: none;
+  color: white;
+}
 
 .footer-line {
   background-color: #d4d4d4;

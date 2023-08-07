@@ -15,7 +15,12 @@ html(lang='en')
     body
         header
             .logo-container
-                img.logo-image(src='/img/jeric-portfolio-logo.png' alt='logo name' width='250px' height="102px")
+                a.logo-link(href='home')
+                    img.logo-image(
+                        src='/img/jeric-portfolio-logo.png' 
+                        alt='logo name' 
+                        width='250px' 
+                        height="102px")
             .header-interaction
                 a.header-contact-link(href='contact') Contact
                 .menu-button
@@ -34,7 +39,7 @@ html(lang='en')
 
         main
             block page-content
-        
+
         footer
             .footer-icons
                 i.fa-brands.fa-github
@@ -43,10 +48,11 @@ html(lang='en')
                 i.fa-brands.fa-linkedin
             .footer-line
             ul.nav-categories
-                li Home
-                li Projects
-                li About
-                li Contact
+                li: a(href='home') Home
+                li: a(href='project') Projects
+                li: a(href='about') About
+                li: a(href='skills') Skills
+                li: a(href='contact') Contact
             .footer-line
             p.copyright © 2023 Jeric Chua
                 br
