@@ -20,7 +20,8 @@
 
 .design-guide {
   width: 250px;
-  height: 180px;
+  height: 280px;
+  padding-top: 50px;
   margin: auto;
   position: relative;
   color: rgb(164, 164, 166);
@@ -29,7 +30,7 @@
   font-size: 24px;
   font-weight: 600;
   position: absolute;
-  top: 40px;
+  top: 90px;
   line-height: 1rem;
 }
 .design-guide .fa-search {
@@ -44,7 +45,7 @@
   height: 3px;
   background-color: #A7AABD;
   position: absolute;
-  bottom: 10px;
+  bottom: 30px;
   right: 0;
 }
 .design-guide .vertical-line {
@@ -53,7 +54,7 @@
   background-color: rgb(164, 164, 166);
   position: absolute;
   right: 25px;
-  bottom: -10px;
+  bottom: 10px;
 }
 
 .profile-placeholder {
