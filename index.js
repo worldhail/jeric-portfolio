@@ -7,11 +7,15 @@ app.set("views", "./views");
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/home", (req, res) => {
-  return res.render("home");
+  return res.render("./pages/home");
 });
 
 app.get("/contact", (req, res) => {
-  return res.render("includes/contact");
+  return res.render("./pages/contact");
+});
+
+app.get("/project", (req, res) => {
+  return res.render('./pages/project');
 });
 
 const port = process.env.PORT || 3000;
