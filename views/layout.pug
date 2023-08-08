@@ -22,7 +22,7 @@ html(lang='en')
                         width='250px' 
                         height="102px")
             .header-interaction
-                a.header-contact-link(href='contact') Contact
+                a.header-contact-link.underline(href='contact') Contact
                 .menu-button
                     each div, index in ['', '', '']
                         .line
@@ -48,11 +48,11 @@ html(lang='en')
                 i.fa-brands.fa-linkedin
             .footer-line
             ul.nav-categories
-                li: a(href='home') Home
-                li: a(href='project') Projects
-                li: a(href='about') About
-                li: a(href='skills') Skills
-                li: a(href='contact') Contact
+                li: a.underline(href='home') Home
+                li: a.underline(href='project') Projects
+                li: a.underline(href='about') About
+                li: a.underline(href='skills') Skills
+                li: a.underline(href='contact') Contact
             .footer-line
             p.copyright © 2023 Jeric Chua
                 br
