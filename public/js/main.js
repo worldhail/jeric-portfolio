@@ -72,10 +72,12 @@ window.addEventListener('scroll', hideHeader = () => {
     if (currentScrollY > prevScrollY) {
         setTimeout(() => {
             header.classList.add('hide-header');
+            header.classList.remove('header-back-transition');
         }, 500);
     } else {
         setTimeout(() => {
             header.classList.remove('hide-header');
+            header.classList.add('header-back-transition');
         }, 500);
     }
     prevScrollY = currentScrollY;
