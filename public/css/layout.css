@@ -155,6 +155,11 @@ nav {
 .categories a:visited {
   color: white;
 }
+.categories .category-list:hover a {
+  background-color: #2983F8;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
 .categories .contact {
   background-color: #2983F8;
   color: white;

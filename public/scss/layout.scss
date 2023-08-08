@@ -164,6 +164,14 @@ nav {
         }
     }
 
+    .category-list:hover {
+        a {
+            background-color: #2983F8;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+    }
+
     .contact {
         background-color: #2983F8;
         color: white;
