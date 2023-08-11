@@ -138,7 +138,6 @@ nav {
 
 .categories {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -164,17 +163,23 @@ nav {
         }
     }
 
-    .category-list:hover {
-        a {
-            background-color: #2983F8;
-            padding: 5px 10px;
-            border-radius: 20px;
-        }
-    }
-
-    .contact {
+    .currentPage {
         background-color: #2983F8;
         color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+}
+
+.categories:hover {
+    .currentPage {
+        background-color: rgb(34, 34, 34);
+    }
+}
+
+.category-list:hover {
+    a {
+        background-color: #2983F8 !important;
         padding: 5px 10px;
         border-radius: 20px;
     }
