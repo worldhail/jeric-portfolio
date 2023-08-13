@@ -1,43 +1,4 @@
 extends ../layout.pug
 
 block page-content
-    section.web-skills
-        h1 Web Development Skills
-        .logo-placeholder-wrapper
-            .logo-placeholder
-                img(
-                src="img/html-logo.png"
-                alt="HTML logo"
-                loading="lazy"
-                width="200px"
-                height="200px")
-            .logo-placeholder
-                img(
-                src="img/css-logo.png"
-                alt="CSS logo"
-                loading="lazy"
-                width="200px"
-                height="200px")
-            .logo-placeholder
-                img(
-                src="img/javascript-logo.png"
-                alt="Javascript logo"
-                loading="lazy"
-                width="372px"
-                height="378px")
-            .logo-placeholder
-                img(
-                src="img/github-logo.png"
-                alt="Github logo"
-                loading="lazy"
-                width="200px"
-                height="200px")
-            .logo-placeholder
-                img(
-                src="img/git-logo.png"
-                alt="git logo"
-                loading="lazy"
-                width="200px"
-                height="200px")
-                
-    link(rel='stylesheet' type='text/css' href='css/skills.css')
+    include ./skills-content.pug

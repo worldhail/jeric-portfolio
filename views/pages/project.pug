@@ -1,28 +1,4 @@
 extends ../layout.pug
 
 block page-content
-    section#projects
-        .project-header
-            h1.project-heading Projects
-            p.project-heading-description
-                cite Made with 
-                | good user experience
-        .calculator-container
-            .calculator-image-container
-                img.calculator-image(
-                src="img/simple-caculator-project.png"
-                alt="calculator"
-                loading="lazy"
-                width="300px"
-                height="477px")
-            .calculator-project-title Calculator
-            p.calculator-description
-                | A simple calculator that can solve mathematical problems such as
-                | addition, subtraction, multiplication, division, and getting the
-                | percentage. Additionally, it can use negative signs when needed.
-                br
-                a.description-link(href="https://worldhail.github.io/calculator/" target="_blank") Try it!
-                    i.fa-solid.fa-arrow-right
-        button.btn-typ.see-project-btn SEE ALL PROJECTS
-    
-    link(rel='stylesheet' type='text/css' href='css/project.css')
+    include ./project-content.pug
