@@ -46,12 +46,15 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
     font-size: 1rem;
     background-color: #2983F8;
-    color: white;
     padding: .5rem;
     border-radius: 1.5rem;
     border: none;
-    // margin-bottom: 20px;
     cursor: pointer;
+    
+    a {
+        color: white;
+        text-decoration: none
+    }
 
     &:hover {
         background-color: #0465e4;

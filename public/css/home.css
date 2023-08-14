@@ -43,11 +43,14 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri;
   font-size: 1rem;
   background-color: #2983F8;
-  color: white;
   padding: 0.5rem;
   border-radius: 1.5rem;
   border: none;
   cursor: pointer;
+}
+.know-more-btn a {
+  color: white;
+  text-decoration: none;
 }
 .know-more-btn:hover {
   background-color: #0465e4;
@@ -117,86 +120,6 @@
 .screen-sizes-image {
   width: 100%;
   height: 100%;
-}
-
-#projects {
-  width: 100%;
-  height: auto;
-  background-color: white;
-  padding: 0 5% 60px;
-}
-
-.see-project-btn {
-  padding: 15px 5px !important;
-  margin-top: 25px;
-  color: white;
-}
-.see-project-btn:hover {
-  background-color: #3265c5;
-}
-
-.project-header {
-  padding: 55px 0;
-}
-
-.project-heading {
-  font-size: 40px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri;
-  font-weight: 600;
-}
-
-.project-heading-description {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #757575;
-}
-.project-heading-description cite {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri;
-  font-size: 1.1rem;
-}
-
-.calculator-container {
-  width: 100%;
-  padding: 10px 0 15px;
-  color: #424656;
-}
-
-.calculator-image-container {
-  background: linear-gradient(to bottom, #feebeb, white);
-  padding: 20px;
-  margin-bottom: 10px;
-}
-
-.calculator-image {
-  display: block;
-  width: 100px;
-  height: auto;
-  margin: 10px auto;
-}
-
-.calculator-project-title {
-  font-size: 1.1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-}
-
-.calculator-description {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.2rem;
-  padding: 5px 0;
-  color: #757575;
-}
-.calculator-description .fa-arrow-right {
-  margin-left: 5px;
-}
-
-.description-link {
-  font-size: 1.1rem;
-  display: inline-block;
-  margin-top: 10px;
-  color: #2983F8;
-}
-.description-link:visited {
-  color: #245492;
 }
 
 .marketing-section {
@@ -279,32 +202,4 @@
   text-decoration: none;
   font-size: 1rem;
   color: white;
-}
-
-.web-skills {
-  width: 100%;
-  padding: 50px 5%;
-}
-.web-skills h1 {
-  font-size: 40px;
-  font-weight: 600;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri;
-  padding: 5px;
-  margin-bottom: 30px;
-}
-
-.logo-placeholder-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.logo-placeholder {
-  width: 80px;
-  height: 80px;
-}
-.logo-placeholder img {
-  width: 100%;
-  height: 100%;
 }/*# sourceMappingURL=home.css.map */
