@@ -84,13 +84,14 @@
   margin: auto;
   background-color: rgb(242, 243, 251);
 }
-.go-to-project h1 {
+.go-to-project p {
   margin-bottom: 40px;
   font-size: 60px;
   background: linear-gradient(to right, #3378cd, #4377d1, #5079ab);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bolder;
 }
 .go-to-project .btn-typ {
   display: block;
