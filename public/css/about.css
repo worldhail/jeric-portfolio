@@ -1,5 +1,5 @@
 #about-me {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 #about-me h2 {
   font-size: 40px;
@@ -76,4 +76,41 @@
 
 .about-competitive-advantage > div {
   margin: 5px 0;
+}
+
+.go-to-project {
+  text-align: center;
+  padding: 50px 20px;
+  margin: auto;
+  background-color: rgb(242, 243, 251);
+}
+.go-to-project h1 {
+  margin-bottom: 40px;
+  font-size: 60px;
+  background: linear-gradient(to right, #3378cd, #4377d1, #5079ab);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.go-to-project .btn-typ {
+  display: block;
+  width: 160px;
+  margin: 5px auto 0;
+  padding: 15px;
+  border: none;
+  background-color: rgba(38, 71, 114, 0.8784313725);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.go-to-project .btn-typ:hover {
+  background-color: #3265c5;
+}
+.go-to-project a {
+  text-decoration: none;
+  color: white;
+}
+.go-to-project span {
+  display: block;
+  font-size: 1rem;
+  margin: 50px auto;
 }/*# sourceMappingURL=about.css.map */

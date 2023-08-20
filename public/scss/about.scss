@@ -1,6 +1,6 @@
 //ABOUT-ME PAGE
 #about-me {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 
     h2 {
         font-size: 40px;
@@ -87,4 +87,46 @@
 
 .about-competitive-advantage>div {
     margin: 5px 0;
+}
+
+//KNOWING ME: A GUIDE TOWARDS PROJECT LINK
+.go-to-project {
+    text-align: center;
+    padding: 50px 20px;
+    margin: auto;
+    background-color: rgb(242, 243, 251);
+
+    h1 {
+        margin-bottom: 40px;
+        font-size: 60px;
+        background: linear-gradient(to right, #3378cd, #4377d1, #5079ab);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .btn-typ {
+        display: block;
+        width: 160px;
+        margin: 5px auto 0;
+        padding: 15px;
+        border: none;
+        background-color: #264772e0;
+        letter-spacing: 1px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #3265c5;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    span {
+        display: block;
+        font-size: 1rem;
+        margin: 50px auto;
+    }
 }
