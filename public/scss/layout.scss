@@ -227,3 +227,13 @@ footer {
     height: 2px;
     margin: 20px 0;
 }
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 0 5%;
+    }
+
+    footer {
+            padding: 20px 5%;
+    }
+}
