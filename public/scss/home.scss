@@ -220,3 +220,28 @@
         color: white;
     }
 }
+
+@media screen and (min-width: 768px) {    
+    .brief-introduction {
+        width: 75%;
+        padding: 20px 8% 1.87rem;
+        font-size: 1.3rem;
+    }
+
+    .descriptive-profession {
+        font-size: 1.3rem;
+    }
+
+    .short-objective {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+
+    .know-more-container {
+        margin-top: 10px;
+    }
+
+    .know-more-btn {
+        font-size: 1.1rem;
+    }
+}
