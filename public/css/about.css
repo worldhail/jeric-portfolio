@@ -7,9 +7,9 @@
   color: black;
 }
 #about-me article {
-  max-width: 800px;
   margin: auto;
   padding: 0 5%;
+  font-size: 1.3rem;
 }
 
 .profile-container {
@@ -86,7 +86,7 @@
 }
 .go-to-project p {
   margin-bottom: 40px;
-  font-size: 60px;
+  font-size: 45px;
   background: linear-gradient(to right, #3378cd, #4377d1, #5079ab);
   -webkit-background-clip: text;
           background-clip: text;
@@ -112,6 +112,6 @@
 }
 .go-to-project span {
   display: block;
-  font-size: 1rem;
+  font-size: 20px;
   margin: 50px auto;
 }/*# sourceMappingURL=about.css.map */

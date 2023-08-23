@@ -9,9 +9,9 @@
     }
 
     article {
-        max-width: 800px;
         margin: auto;
         padding: 0 5%;
+        font-size: 1.3rem;
     }
 }
 
@@ -98,7 +98,7 @@
 
     p {
         margin-bottom: 40px;
-        font-size: 60px;
+        font-size: 45px;
         background: linear-gradient(to right, #3378cd, #4377d1, #5079ab);
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -127,7 +127,7 @@
 
     span {
         display: block;
-        font-size: 1rem;
+        font-size: 20px;
         margin: 50px auto;
     }
 }
