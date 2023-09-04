@@ -34,7 +34,7 @@ const sidebar = {
     ulWrapper.style.transform = "translateX(-75vw)";
     overlay.style.opacity = "1";
     this.categories.style.transform = "translateX(0px)";
-    this.nav.style.pointerEvents = "auto";
+    overlay.style.zIndex = '1';
     this.onTransitionEnd();
   },
 
@@ -44,7 +44,7 @@ const sidebar = {
     overlay.style.opacity = "0";
     this.categories.style.transform = "translateX(50px)";
     this.oneTimeReminder.style.opacity = "0";
-    this.nav.style.pointerEvents = "none";
+    overlay.style.zIndex = '-1';
     this.onTransitionEnd();
   },
 };
@@ -92,9 +92,14 @@ function newClassOnCurrentPage(link) {
   const firstIndexOfLastWord = link.lastIndexOf("/") + 1;
   const lastWord = link.slice(firstIndexOfLastWord);
   const pageClass = document.querySelector(`.${lastWord}`);
-  pageClass.classList.add("currentPage");
-};
-newClassOnCurrentPage(currentLink);
+
+  if (window.innerWidth < 992) {
+    pageClass.classList.add("currentPage");
+  } else {
+    pageClass.classList.remove("currentPage");
+  }
+}
+addEventListener("resize", newClassOnCurrentPage(currentLink));
 
 //INTERSECTION OBERSERVER
 const options = {
