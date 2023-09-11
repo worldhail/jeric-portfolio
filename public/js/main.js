@@ -34,7 +34,7 @@ const sidebar = {
     ulWrapper.style.transform = "translateX(-75vw)";
     overlay.style.opacity = "1";
     this.categories.style.transform = "translateX(0px)";
-    overlay.style.zIndex = '1';
+    overlay.style.zIndex = "1";
     this.onTransitionEnd();
   },
 
@@ -44,7 +44,7 @@ const sidebar = {
     overlay.style.opacity = "0";
     this.categories.style.transform = "translateX(50px)";
     this.oneTimeReminder.style.opacity = "0";
-    overlay.style.zIndex = '-1';
+    overlay.style.zIndex = "-1";
     this.onTransitionEnd();
   },
 };
@@ -87,19 +87,30 @@ window.addEventListener(
 );
 
 //TO ADD AN INDICATOR TO MENU ON WHICH PAGE IS CURRENTLY ON DISPLAY.
-const currentLink = window.location.href;
-function newClassOnCurrentPage(link) {
-  const firstIndexOfLastWord = link.lastIndexOf("/") + 1;
-  const lastWord = link.slice(firstIndexOfLastWord);
-  const pageClass = document.querySelector(`.${lastWord}`);
-
-  if (window.innerWidth < 992) {
-    pageClass.classList.add("currentPage");
-  } else {
-    pageClass.classList.remove("currentPage");
-  }
+function getCurrent_href() {
+  const currentLink = window.location.href;
+  const firstIndexOfLastWord = currentLink.lastIndexOf("/") + 1;
+  const lastWord = currentLink.slice(firstIndexOfLastWord);
+  return document.querySelector(`.${lastWord}`);
 }
-addEventListener("resize", newClassOnCurrentPage(currentLink));
+
+const currentPage = "currentPage";
+(function addClassName() {
+  if (window.innerWidth < 992) {
+    getCurrent_href().classList.add(currentPage);
+  } else {
+    getCurrent_href().classList.remove(currentPage);
+  }
+})();
+
+//BOX SHADOW OF HEADER SHOW UP WHEN USER START SCROLLING
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 20 && window.innerWidth >= 992) {
+    headerInteraction.style.opacity = "1";
+  } else if (window.scrollY < 20 && window.innerWidth >= 992) {
+    headerInteraction.style.opacity = "0";
+  }
+});
 
 //INTERSECTION OBERSERVER
 const options = {
