@@ -3,17 +3,18 @@ const menuButton = document.querySelector(".menu-button");
 const overlay = document.querySelector(".hidden-overlay");
 const navCloseBtn = document.querySelector(".nav-close");
 const ulWrapper = document.querySelector(".ul-wrapper");
+const categories = document.querySelector(".categories");
 
 //SIDEBAR FUNCTIONS
 const sidebar = {
   oneTimeReminder: document.querySelector(".one-time-reminder"),
-  categories: document.querySelector(".categories"),
+  // categories: document.querySelector(".categories"),
   nav: document.querySelector("nav"),
   transition: "transition",
 
   toggleElementClass() {
     ulWrapper.classList.add(this.transition);
-    this.categories.classList.add(this.transition);
+    categories.classList.add(this.transition);
     overlay.classList.add(this.transition);
   },
 
@@ -21,8 +22,8 @@ const sidebar = {
     ulWrapper.addEventListener("transitionend", () => {
       ulWrapper.classList.remove(this.transition);
     });
-    this.categories.addEventListener("transitionend", () => {
-      this.categories.classList.remove(this.transition);
+    categories.addEventListener("transitionend", () => {
+      categories.classList.remove(this.transition);
     });
     overlay.addEventListener("transitionend", () => {
       overlay.classList.remove(this.transition);
@@ -33,7 +34,7 @@ const sidebar = {
     this.toggleElementClass();
     ulWrapper.style.transform = "translateX(-75vw)";
     overlay.style.opacity = "1";
-    this.categories.style.transform = "translateX(0px)";
+    categories.style.transform = "translateX(0px)";
     overlay.style.zIndex = "1";
     this.onTransitionEnd();
   },
@@ -42,7 +43,7 @@ const sidebar = {
     this.toggleElementClass();
     ulWrapper.style.transform = "none";
     overlay.style.opacity = "0";
-    this.categories.style.transform = "translateX(50px)";
+    categories.style.transform = "translateX(50px)";
     this.oneTimeReminder.style.opacity = "0";
     overlay.style.zIndex = "-1";
     this.onTransitionEnd();
@@ -65,12 +66,11 @@ for (let element of elements) {
 //SHOW AND HIDE HEADER WHEN SCROLL TRIGGERED IN Y AXIS;
 let prevScrollY = scrollY;
 
-window.addEventListener(
-  "scroll",
-  (hideHeader = () => {
-    const header = document.querySelector("header");
-    let currentScrollY = scrollY;
+window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  let currentScrollY = scrollY;
 
+  if (window.innerWidth < 992) {
     if (currentScrollY > prevScrollY) {
       setTimeout(() => {
         header.classList.add("hide-header");
@@ -83,8 +83,8 @@ window.addEventListener(
       }, 500);
     }
     prevScrollY = currentScrollY;
-  })
-);
+  }
+});
 
 //TO ADD AN INDICATOR TO MENU ON WHICH PAGE IS CURRENTLY ON DISPLAY.
 function getCurrent_href() {
@@ -102,6 +102,23 @@ const currentPage = "currentPage";
     getCurrent_href().classList.remove(currentPage);
   }
 })();
+
+//WHEN SCREEN SIZE IS TRIGGERED, THE STYLE SHOULD RETURN TO THEIR OWN SETTINGS
+const mediaQuery = window.matchMedia("(min-width: 992px)");
+const headerInteraction = document.querySelector(".header-interaction");
+mediaQuery.addEventListener("change", (event) => {
+  if (event.matches) {
+    getCurrent_href().classList.remove(currentPage);
+    overlay.style.display = "none";
+    headerInteraction.style.opacity = "0";
+    ulWrapper.style.transform = "none";
+    categories.style.transform = "none";
+  } else {
+    getCurrent_href().classList.add(currentPage);
+    overlay.style.cssText = "display: block; z-index: -1; opacity: 0;";
+    headerInteraction.style.opacity = "1";
+  }
+});
 
 //BOX SHADOW OF HEADER SHOW UP WHEN USER START SCROLLING
 window.addEventListener("scroll", () => {
