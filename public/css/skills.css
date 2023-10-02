@@ -1,6 +1,7 @@
 .web-skills {
   width: 100%;
   padding: 70px 5%;
+  overflow: hidden;
 }
 .web-skills h1 {
   font-size: 40px;
@@ -10,11 +11,21 @@
   margin-bottom: 30px;
 }
 
+.logo-container-skills {
+  position: relative;
+}
+
 .logo-placeholder-wrapper {
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  transform: translateX(0);
+}
+
+.clone-logo-wrapper {
+  position: absolute;
+  top: 0;
 }
 
 .logo-placeholder {
