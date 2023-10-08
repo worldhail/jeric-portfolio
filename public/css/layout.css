@@ -255,6 +255,8 @@ footer {
   }
   .categories a:hover {
     color: #2983F8;
+    transform: scale(1.1);
+    transition: 0.4s;
   }
   .logo-container {
     scale: 1.2;

@@ -278,6 +278,8 @@ footer {
 
             &:hover {
                 color: #2983F8;
+                transform: scale(1.1);
+                transition: .4s;
             }
         }
     }
