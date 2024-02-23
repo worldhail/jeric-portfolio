@@ -20,7 +20,7 @@ html(lang='en')
     body
         header
             .logo-container
-                a.logo-link(href='home')
+                a.logo-link(href='index')
                     img.logo-image(
                         src='/img/jeric-portfolio-logo.png' 
                         alt='logo name' 
@@ -37,10 +37,15 @@ html(lang='en')
             .ul-wrapper
                 i.fa-solid.fa-arrow-right.nav-close
                 ul.categories
-                    each line, value in ['home', 'project', 'about', 'skills', 'contact']
-                        li.category-list(class=line + '-link')
-                            -const upperCase = line.replace(line[0], line[0].toUpperCase())
-                            a(class=line href=line)= upperCase
+                    li.category-list.home-link: a.home(href='index') Home
+                    li.category-list.project-link: a.project(href='project') Projects
+                    li.category-list.about-link: a.about(href='about') About
+                    li.category-list.skills-link: a.skills(href='skills') Skills
+                    li.category-list.contact-link: a.contact(href='contact') Contact
+                    //- each line, value in ['home', 'project', 'about', 'skills', 'contact']
+                    //-     li.category-list(class=line + '-link')
+                    //-         -const upperCase = line.replace(line[0], line[0].toUpperCase())
+                    //-         a(class=line href=line)= upperCase
 
         main
             block page-content
@@ -53,7 +58,7 @@ html(lang='en')
                 i.fa-brands.fa-linkedin
             .footer-line
             ul.nav-categories
-                li: a.underline(href='home') Home
+                li: a.underline(href='index') Home
                 li: a.underline(href='project') Projects
                 li: a.underline(href='about') About
                 li: a.underline(href='skills') Skills
