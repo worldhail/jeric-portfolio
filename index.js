@@ -6,8 +6,8 @@ app.set("view engine", "pug");
 app.set("views", "./views");
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get("/home", (req, res) => {
-  return res.render("./pages/home");
+app.get("/index", (req, res) => {
+  return res.render("./pages/index");
 });
 
 app.get("/contact", (req, res) => {
