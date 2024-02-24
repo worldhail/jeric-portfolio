@@ -191,7 +191,7 @@ const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.style.background =
-        'url("/img/contact-details-background1.jpg") no-repeat content-box center';
+        'url("/img/contact-details-background1.jpg") center';
       observer.unobserve(entry.target);
     }
   });
