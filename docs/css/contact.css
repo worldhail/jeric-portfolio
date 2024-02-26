@@ -3,7 +3,7 @@
 }
 
 .map-placeholder {
-  background: url("/img/map.jpg") no-repeat content-box bottom;
+  background: url("img/map.jpg") no-repeat content-box bottom;
   background-size: cover;
   margin: 0 10%;
   position: relative;
