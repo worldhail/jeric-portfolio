@@ -42,10 +42,6 @@ html(lang='en')
                     li.category-list.about-link: a.about(href='about') About
                     li.category-list.skills-link: a.skills(href='skills') Skills
                     li.category-list.contact-link: a.contact(href='contact') Contact
-                    //- each line, value in ['home', 'project', 'about', 'skills', 'contact']
-                    //-     li.category-list(class=line + '-link')
-                    //-         -const upperCase = line.replace(line[0], line[0].toUpperCase())
-                    //-         a(class=line href=line)= upperCase
 
         main
             block page-content
@@ -67,3 +63,5 @@ html(lang='en')
             p.copyright © 2023 Jeric Chua
                 br
                 | Made with passion
+    
+    script(src='js/ui/sidebar.js' defer)
