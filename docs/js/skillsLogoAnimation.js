@@ -41,11 +41,12 @@ const logoPlaceholderWrapper = document.querySelector(
         cloneLogoWrapper.style.transform = `translateX(${clone_translateX}px)`;
       }
   
-      requestAnimationFrame(panLeft);
+      // requestAnimationFrame(panLeft);
     } else {
       translateX = innerWidth_with10percntDiff;
       clone_translateX = 0;
-      requestAnimationFrame(panLeft);
+      // requestAnimationFrame(panLeft);
     }
+    requestAnimationFrame(panLeft);
   }
   requestAnimationFrame(panLeft);

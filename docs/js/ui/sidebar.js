@@ -1,9 +1,7 @@
 //VARIABLES
+import { overlay, ulWrapper, categories } from "../variables.js"
 const menuButton = document.querySelector(".menu-button");
-const overlay = document.querySelector(".hidden-overlay");
 const navCloseBtn = document.querySelector(".nav-close");
-const ulWrapper = document.querySelector(".ul-wrapper");
-const categories = document.querySelector(".categories");
 
 //SIDEBAR FUNCTIONS
 const sidebar = {

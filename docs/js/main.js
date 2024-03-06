@@ -32,24 +32,9 @@ window.addEventListener("scroll", () => {
 });
 
 //INDICATOR PAGE DISPLAY: TO ADD AN INDICATOR TO MENU ON WHICH PAGE IS CURRENTLY ON DISPLAY.
-function getCurrent_href() {
-  let currentLink = window.location.href;
-  const pages = ['index', 'about', 'contact', 'skills', 'project'];
-  const page = pages.filter(page => currentLink.includes(page)).join();
-
-  return page === '' ? document.querySelector('.index')
-  : document.querySelector(page);
-
-  // if (currentLink === 'https://worldhail.github.io/jeric-portfolio/' || 'http://localhost:3000') {
-  //   return document.querySelector('.index');
-  // }
-
-  // const firstIndexOfLastWord = currentLink.lastIndexOf("/") + 1;
-  // const lastWord = currentLink.slice(firstIndexOfLastWord);
-  // return document.querySelector(`.${lastWord}`);
-}
-
+import { getCurrent_href } from "./getCurrent_href.js";
 const currentPage = "currentPage";
+
 (function addClassName() {
   if (window.innerWidth < 992) {
     getCurrent_href().classList.add(currentPage);
@@ -59,11 +44,10 @@ const currentPage = "currentPage";
 })();
 
 //DISPLAY ARRANGER: WHEN SCREEN SIZE IS TRIGGERED, THE STYLE SHOULD RETURN TO THEIR OWN SETTINGS
+import { overlay, ulWrapper, categories } from "./variables.js"
 const mediaQuery = window.matchMedia("(min-width: 992px)");
+
 mediaQuery.addEventListener("change", (event) => {
-  const overlay = document.querySelector(".hidden-overlay");
-  const ulWrapper = document.querySelector(".ul-wrapper");
-  const categories = document.querySelector(".categories");
 
   if (event.matches) {
     getCurrent_href().classList.remove(currentPage);
