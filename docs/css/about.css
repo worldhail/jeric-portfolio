@@ -111,8 +111,7 @@
   text-decoration: none;
   color: white;
 }
-.go-to-project span {
-  display: block;
+.go-to-project .span {
   font-size: 20px;
   margin: 50px auto;
 }

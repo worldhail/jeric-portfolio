@@ -101,7 +101,6 @@
         font-size: 45px;
         font-weight: bolder;
         background-image: linear-gradient(to right, #3378cd, #4377d1, #5079ab);
-        // background-image: linear-gradient(to right, #1a5296, #5c89d7, rgb(155, 196, 247));
         // background-image: linear-gradient(to right, #154783, #608dc5);
         -webkit-background-clip: text;
         background-clip: text;
@@ -129,8 +128,7 @@
         color: white;
     }
 
-    span {
-        display: block;
+    .span {
         font-size: 20px;
         margin: 50px auto;
     }
