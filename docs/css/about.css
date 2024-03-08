@@ -87,11 +87,12 @@
 .go-to-project p {
   margin-bottom: 40px;
   font-size: 45px;
-  background: linear-gradient(to right, #3378cd, #4377d1, #5079ab);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-weight: bolder;
+  background-image: linear-gradient(to right, #3378cd, #4377d1, #5079ab);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .go-to-project .btn-typ {
   display: block;
