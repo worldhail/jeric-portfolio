@@ -82,13 +82,13 @@
   text-align: center;
   padding: 50px 20px;
   margin: auto;
-  background-color: rgb(242, 243, 251);
+  background-color: rgb(246, 248, 249);
 }
 .go-to-project p {
   margin-bottom: 40px;
   font-size: 45px;
   font-weight: bolder;
-  background-image: linear-gradient(to right, #3378cd, #4377d1, #5079ab);
+  background-image: linear-gradient(to right, #298af8, #5481BC, rgb(87, 115, 151));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
