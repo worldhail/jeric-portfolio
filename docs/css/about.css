@@ -7,15 +7,21 @@
   color: black;
 }
 #about-me article {
-  margin: auto;
-  padding: 0 5%;
+  width: 95%;
+  margin: 30px auto;
+  padding: 0 5% 20px;
   font-size: 1.3rem;
+  border-radius: 20px;
+  background-color: #f5f6f7;
+}
+#about-me article p {
+  color: rgb(60, 60, 60);
 }
 
 .profile-container {
   width: 100%;
   background-color: rgb(36, 37, 37);
-  padding: 50px 0;
+  padding: 90px 0 50px;
 }
 
 .design-guide {
@@ -118,10 +124,13 @@
 
 @media screen and (min-width: 768px) {
   #about-me article {
-    padding: 0 15%;
+    width: 75%;
   }
 }
 @media screen and (min-width: 992px) {
+  #about-me article {
+    width: 60%;
+  }
   .go-to-project p {
     font-size: 60px;
   }
