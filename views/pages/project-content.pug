@@ -4,22 +4,39 @@ section#projects
         p.project-heading-description
             cite Made with 
             | good user experience
-    .calculator-container
-        .calculator-image-container
-            img.calculator-image(
-            src="img/simple-caculator-project.png"
-            alt="calculator"
-            loading="lazy"
-            width="300px"
-            height="477px")
-        .calculator-project-title Calculator
-        p.calculator-description
-            | A simple calculator that can solve mathematical problems such as
-            | addition, subtraction, multiplication, division, and getting the
-            | percentage. Additionally, it can use negative signs when needed.
-            br
-            a.description-link(href="https://worldhail.github.io/calculator/" target="_blank") Try it!
-                i.fa-solid.fa-arrow-right
-    button.btn-typ.see-project-btn SEE ALL PROJECTS
-
-//- link(rel='stylesheet' type='text/css' href='css/project.css')
+    .project-grid-content
+        .calculator-container.project-container
+            .calculator-image-container.project-image-container
+                img.calculator-image(
+                src="img/simple-caculator-project.png"
+                alt="calculator"
+                loading="lazy"
+                width="300px"
+                height="477px")
+            .calculator-project-title.project-title Calculator
+            p.calculator-description.project-description
+                | A simple calculator that can solve mathematical problems such as
+                | addition, subtraction, multiplication, division, and getting the
+                | percentage. Additionally, it can use negative signs when needed.
+                br
+                a.description-link(href="https://worldhail.github.io/calculator/" target="_blank") Try it!
+                    i.fa-solid.fa-arrow-right
+        .product-page-container.project-container
+            .product-page-image-container.project-image-container
+                img.product-page-image(
+                src="img/product-landing-page.png"
+                alt="product-landing-page-sample"
+                loading="lazy"
+                width="250px"
+                height="auto")
+            .product-page-title.project-title Product Landing Page
+            p.product-page-description.project-description
+                | A basic simple product landing page that shares 2 variety types
+                | of a particular product with their information, and prices indicated
+                | are based on their weight.
+                br
+                a.description-link(href="https://worldhail.github.io/sample-product-landing-page/" target="_blank") Try it!
+                    i.fa-solid.fa-arrow-right
+        //- .project-3
+    button.btn-typ.see-project-btn 
+        a(href='project') SEE ALL PROJECTS
