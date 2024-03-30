@@ -1,8 +1,8 @@
 //HEADER VISIBILITY: SHOW AND HIDE HEADER WHEN SCROLL TRIGGERED IN Y AXIS;
 let prevScrollY = scrollY;
 
+const header = document.querySelector("header");
 window.addEventListener("scroll", () => {
-  const header = document.querySelector("header");
   let currentScrollY = scrollY;
 
   if (window.innerWidth < 992) {
@@ -23,9 +23,12 @@ window.addEventListener("scroll", () => {
 
 //BOX SHADOW OF HEADER SHOW UP WHEN USER START SCROLLING
 const headerInteraction = document.querySelector(".header-interaction");
+const nav = document.querySelector('nav');
 window.addEventListener("scroll", () => {
   if (window.scrollY > 20 && window.innerWidth >= 992) {
     headerInteraction.style.opacity = "1";
+    header.style.minHeight = '70px';
+    nav.style.height = '70px';
   } else if (window.scrollY < 20 && window.innerWidth >= 992) {
     headerInteraction.style.opacity = "0";
   }

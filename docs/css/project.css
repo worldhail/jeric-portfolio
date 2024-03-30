@@ -133,4 +133,7 @@
   .project-grid-content {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  #projects {
+    padding-top: 70px;
+  }
 }/*# sourceMappingURL=project.css.map */
