@@ -58,11 +58,6 @@
     width: 100%;
     padding: 10px 0 55px;
     color: #424656;
-
-    &:hover {
-        transform: scale(1.1);
-        transition: .5s;
-    }
 }
 
 .project-image-container {
@@ -135,6 +130,16 @@
     .project-heading {
         font-size: 55px;
     }
+
+    .project-container:hover {
+        transform: scale(1.1);
+        transition: .5s;
+    }
+
+    .project-container:not(:hover) {
+        transition: .5s .1s; 
+    }
+
 }
 
 @media screen and (min-width: 992px) {

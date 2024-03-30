@@ -152,10 +152,6 @@ header {
   color: #2983F8;
 }
 
-.categories:hover .currentPage {
-  background-color: rgb(34, 34, 34);
-}
-
 footer {
   padding: 20px;
   background-color: rgb(36, 36, 36);
@@ -209,6 +205,14 @@ footer {
     min-height: 70px;
     box-shadow: none;
   }
+  header:hover .logo-container {
+    position: relative;
+    transform: translateY(-5px);
+    transition: 0.7s;
+  }
+  header:not(:hover) .logo-container {
+    transition: 0.8s 0.2s;
+  }
   nav {
     width: 478.484px;
     height: 70px;
@@ -257,6 +261,9 @@ footer {
     color: #2983F8;
     transform: scale(1.1);
     transition: 0.4s;
+  }
+  .categories .category-list > a:not(:hover) {
+    transition: 0.4s 0.1s;
   }
   .logo-container {
     scale: 1.2;

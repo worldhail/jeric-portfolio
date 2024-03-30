@@ -54,10 +54,6 @@
   padding: 10px 0 55px;
   color: #424656;
 }
-.project-container:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-}
 
 .project-image-container {
   padding: 20px;
@@ -124,6 +120,13 @@
   }
   .project-heading {
     font-size: 55px;
+  }
+  .project-container:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .project-container:not(:hover) {
+    transition: 0.5s 0.1s;
   }
 }
 @media screen and (min-width: 992px) {

@@ -160,11 +160,11 @@ header {
     }
 }
 
-.categories:hover {
-    .currentPage {
-        background-color: rgb(34, 34, 34);
-    }
-}
+// .categories:hover {
+//     .currentPage {
+//         background-color: rgb(34, 34, 34);
+//     }
+// }
 
 footer {
     padding: 20px;
@@ -225,6 +225,20 @@ footer {
         box-shadow: none;
     }
 
+    header:hover {
+        .logo-container {
+            position: relative;
+            transform: translateY(-5px);
+            transition: .7s;
+        }
+    }
+
+    header:not(:hover) {
+        .logo-container {
+            transition: 0.8s .2s;
+        }
+    }
+
     nav {
         width: 478.484px;
         height: 70px;
@@ -282,6 +296,10 @@ footer {
                 transition: .4s;
             }
         }
+
+        .category-list > a:not(:hover) {
+            transition: .4s .1s;
+        }   
     }
 
     .logo-container {
